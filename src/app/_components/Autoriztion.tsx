@@ -9,7 +9,7 @@ const Autoriztion = () => {
   return (
     <div>
       {user.isSignedIn && <SignOutButton />}
-      {!user.isSignedIn && <SignInButton />}
+      {!user.isSignedIn && <SignInButton fallbackRedirectUrl={} />}
     </div>
   );
 };
